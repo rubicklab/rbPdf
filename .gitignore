@@ -1,0 +1,46 @@
+/vendor/
+/.phpunit.cache/
+.phpunit.result.cache
+composer.phar
+
+# IDE / editor
+/.idea/
+/.vscode/
+/.fleet/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Ambiente / credenciais
+.env
+.env.*
+!.env.example
+
+# Artefatos locais de PDF
+*.pdf
+!**/fixtures/**/*.pdf
+!**/Fixtures/**/*.pdf
+
+# Conteúdo local em storage/app (PDFs gerados, tmp, etc.)
+/storage/app/*
+!/storage/app/.gitkeep
+
+# Node (se usar tooling front na doc)
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# Cobertura e caches PHP
+/coverage/
+*.cache
+.php_cs.cache
+.php-cs-fixer.cache
+
+# Laravel (consumidores ou workbench)
+/storage/*.key
+Homestead.json
+Homestead.yaml
