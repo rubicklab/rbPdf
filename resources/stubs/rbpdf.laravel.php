@@ -10,9 +10,8 @@ declare(strict_types=1);
  */
 
 use Rubick\RbPdf\Laravel\RbPdfServiceProvider;
-use ReflectionClass;
 
-$ref = new ReflectionClass(RbPdfServiceProvider::class);
+$ref = new \ReflectionClass(RbPdfServiceProvider::class);
 $packageRoot = dirname($ref->getFileName(), 3);
 /** @var array<string, mixed> $base */
 $base = require $packageRoot.'/config/rbpdf.php';
